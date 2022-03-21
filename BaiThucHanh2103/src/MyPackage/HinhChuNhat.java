@@ -1,11 +1,12 @@
+package MyPackage;
 import java.util.Scanner;
 public class HinhChuNhat {
     Scanner sc= new Scanner(System.in);
-    public int chieudai;
-    public int chieurong;
-    public double cv;
-    public double dt;
-     void nhap()
+    private int chieudai;
+    private int chieurong;
+    private double cv;
+    private double dt;
+    public void nhap()
     {
         System.out.print("nhap chieu dai: ");
          chieudai=sc.nextInt();
@@ -13,17 +14,17 @@ public class HinhChuNhat {
          chieurong=sc.nextInt();
     }
     
-     void chuvi()
+     public void chuvi()
     {
         cv=chieurong+chieudai;
     }
-     void dientich(){
+     public void dientich(){
          dt=chieurong*chieudai;
     }
-    void inchuvi(){
+    public void inchuvi(){
         System.out.println("chu vi: "+cv);
     }
-    void indientich(){
+    public void indientich(){
         System.out.println(" dientich: "+dt);
     }
 

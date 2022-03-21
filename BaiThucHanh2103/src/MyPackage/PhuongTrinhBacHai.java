@@ -1,11 +1,12 @@
+package MyPackage;
 import java.util.Scanner;
 public class PhuongTrinhBacHai {
-    public int a;
-    public int b;
-    public int c;
-    public double delta;
+    private int a;
+    private int b;
+    private int c;
+    private double delta;
     Scanner sc= new Scanner(System.in);
-    void nhapheso()
+    public void nhapheso()
     {
 
     System.out.println("nhap he so a: ");
@@ -15,7 +16,7 @@ public class PhuongTrinhBacHai {
     System.out.println("nhap he so c: ");
      c=sc.nextInt();
     }
-    void giaipt()
+    public void giaipt()
     {
 
     delta = b*b - 4*a*c;
