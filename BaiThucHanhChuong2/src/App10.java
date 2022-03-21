@@ -12,10 +12,11 @@ public class App10 {
             System.out.print("nhap mot chuoi ki tu bat ky: ");
             tr=sc.next();
         }while(tr.length()>80);
+            sc.close();
         for(int i=0; i<tr.length(); i++)
         {
             if(tr.charAt(i) == c) dem++;
         }
-        System.out.print("ky tu "+c+" xuat hien "+dem+" lan");
+        System.out.print("ky tu '"+c+"' xuat hien "+dem+" lan");
     }
 }
