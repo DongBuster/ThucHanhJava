@@ -7,7 +7,20 @@ public class PerSon {
     private boolean gender;
     private String Address;
     Scanner sc=new Scanner(System.in);
-   
+   public PerSon()
+   {
+       PerSonID = "";
+       PerSonName="";
+       gender=false;
+       Address = "";
+   }
+    public PerSon(String PerSonID, String PerSonName, boolean gender, String Address)
+    {
+        this.PerSonID = PerSonID;
+        this.PerSonName = PerSonName;
+        this.gender = gender;
+        this.Address = Address;
+    }
     public void nhapthongtin(){
         System.out.print("nhap PerSonName: ");
         PerSonName=sc.nextLine();

@@ -8,6 +8,20 @@ public class SinhVien {
     private String DiaChi;
     private String Ngaysinh;
     Scanner sc= new Scanner(System.in);
+    public SinhVien(){
+        MaSinhVien="";
+        Hoten="";
+        GioiTinh=false;
+        DiaChi="";
+        Ngaysinh="";
+    }
+   public  SinhVien(String maSinhVien, String Hoten, boolean GioiTinh, String DiaChi, String Ngaysinh){
+        this.MaSinhVien=maSinhVien;
+        this.Hoten=Hoten;
+        this.GioiTinh=GioiTinh;
+        this.DiaChi=DiaChi;
+        this.Ngaysinh=Ngaysinh;
+    }
     public void nhapthongtin()
     {
         System.out.print("nhap ho ten: ");
@@ -30,6 +44,8 @@ public class SinhVien {
         System.out.println("Gioi tinh: "+GioiTinh+"\n");
         System.out.println("Dia chi: "+DiaChi+"\n");
         System.out.println("Ngay sinh: "+Ngaysinh+"\n");
+        
     }
 
 }
+

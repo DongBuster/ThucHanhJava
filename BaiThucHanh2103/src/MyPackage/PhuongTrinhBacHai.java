@@ -6,6 +6,20 @@ public class PhuongTrinhBacHai {
     private int c;
     private double delta;
     Scanner sc= new Scanner(System.in);
+   public PhuongTrinhBacHai()
+    {
+        a=0;
+        b=0;
+        c=0;
+        delta=0;
+    }
+    public PhuongTrinhBacHai(int a, int b, int c)
+    {
+        this.a=a;
+        this.b=b;
+        this.c=c;
+        
+    }
     public void nhapheso()
     {
 
@@ -31,8 +45,8 @@ public class PhuongTrinhBacHai {
         else if(delta<0) System.out.println("phuong trinh vo nghiem");
         else if(delta>0) 
         {
-            x1=-b + Math.sqrt(delta)/2*a;
-            x2=-b - Math.sqrt(delta)/2*a;
+            x1=(-b + Math.sqrt(delta))/(2*a);
+            x2=(-b - Math.sqrt(delta))/(2*a);
             System.out.println("phuong trinh co hai nghiem :"+ "x1 = " + x1 +" x2 = " + x2);
         }
     }
